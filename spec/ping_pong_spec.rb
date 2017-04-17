@@ -3,10 +3,10 @@ require('ping_pong')
 
 describe('Fixnum#ping_pong') do
   it("push numbers from 1 to self in an array") do
-    expect((4).ping_pong()).to(eq([1,2,3,4]))
+    expect((2).ping_pong()).to(eq([1,2]))
   end
   it("push numbers divisible by 3 and replace it to 'ping'") do
-    expect((6).ping_pong()).to(eq([1,2,"ping",4,5,"ping"]))
+    expect((4).ping_pong()).to(eq([1,2,"ping",4]))
   end
   it("push numbers divisible by 5 and replace it to 'pong'")do
     expect((5).ping_pong()).to(eq([1,2,"ping",4,"pong"]))
